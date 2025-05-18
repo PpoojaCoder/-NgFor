@@ -1,0 +1,11 @@
+<p>structuraldirective works!</p>
+
+
+<p>fruit value: {{ fruit }}</p>
+<div [ngSwitch]="fruit">
+  <p *ngSwitchCase="'Apple'">You selected Apple </p>
+  <p *ngSwitchCase="'Banana'">You selected Banana </p>
+  <p *ngSwitchCase="'Orange'">You selected Orange </p>
+  <p *ngSwitchDefault>Please select a fruit</p>
+  <p *ngSwitchDefault>No known fruit selected</p>
+</div>
