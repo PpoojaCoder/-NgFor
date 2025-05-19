@@ -8,5 +8,23 @@ import { CommonModule } from '@angular/common';
   styleUrl: './structuraldirective.component.css'
 })
 export class StructuraldirectiveComponent {
-public fruit = ["Apple","Banana","Mango"]
+public fruit = ["Apple","Banana","Mango"];
+  fruitsList = [
+    {
+    name: 'Apple',
+    color: 'Red',
+    varieties: ['Fuji', 'Gala', 'Honeycrisp']
+  },
+  {
+    name: 'Banana',
+    color: 'Yellow',
+    varieties: ['Cavendish', 'Lady Finger']
+  },
+  {
+    name: 'Cherry',
+    color: 'Dark Red',
+    varieties: ['Bing', 'Rainier']
+  }
+  ];
+
 }
