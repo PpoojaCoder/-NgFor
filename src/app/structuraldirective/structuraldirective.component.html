@@ -9,3 +9,48 @@
   <p *ngSwitchDefault>Please select a fruit</p>
   <p *ngSwitchDefault>No known fruit selected</p>
 </div>
+<ul>
+  <li *ngFor="let fruit of fruits>
+   {{ fruit }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let fruit of fruits; let i = index">
+   {{i}}:{{ fruit }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let fruit of fruits; let f = first">
+   {{f}}:{{ fruit }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let fruit of fruits; let l = last">
+   {{l}}:{{ fruit }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let fruit of fruits; let o = odd">
+   {{o}}:{{ fruit }}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let fruit of fruits; let e = even">
+   {{e}}:{{ fruit }}
+  </li>
+</ul>
+<ul>
+  <li *ngFor="let fruit of fruitsList">
+    {{ fruit.name }} - {{ fruit.color }}
+    <ul>
+      <li *ngFor="let variety of fruit.varieties">
+        Variety: {{ variety }}
+      </li>
+    </ul>
+  </li>
+</ul>
